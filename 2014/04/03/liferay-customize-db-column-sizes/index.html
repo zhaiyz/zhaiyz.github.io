@@ -18,7 +18,7 @@
 <script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    hostname: new URL('http://localhost:4000').hostname,
+    hostname: new URL('http://zhaiyz.com').hostname,
     root: '/',
     scheme: 'Pisces',
     version: '7.7.0',
@@ -48,7 +48,7 @@
   <meta name="description" content="Liferay定制数据库字段长度">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Liferay定制数据库字段长度">
-<meta property="og:url" content="http://localhost:4000/2014/04/03/liferay-customize-db-column-sizes/index.html">
+<meta property="og:url" content="http://zhaiyz.com/2014/04/03/liferay-customize-db-column-sizes/index.html">
 <meta property="og:site_name" content="一介码工">
 <meta property="og:description" content="Liferay定制数据库字段长度">
 <meta property="og:locale" content="zh_CN">
@@ -61,7 +61,7 @@
 <meta property="article:tag" content=" size">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://localhost:4000/2014/04/03/liferay-customize-db-column-sizes/">
+<link rel="canonical" href="http://zhaiyz.com/2014/04/03/liferay-customize-db-column-sizes/">
 
 
 <script id="page-configurations">
@@ -221,7 +221,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2014/04/03/liferay-customize-db-column-sizes/">
+    <link itemprop="mainEntityOfPage" href="http://zhaiyz.com/2014/04/03/liferay-customize-db-column-sizes/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="http://img.zhaiyz.tech/avatar.jpeg">
@@ -283,7 +283,7 @@
 <li>Liferay Portal：6.2.0-ce-ga1</li>
 <li>Mysql：5.5.35</li>
 </ul>
-<h3 id="创建portlet"><a href="#创建portlet" class="headerlink" title="创建portlet"></a>创建portlet</h3><p>按照<a href="http://zhaiyz.com/2014/04/01/liferay-service-builder/" target="_blank" rel="noopener">Liferay Service Builder</a>中的步骤创建拥有一个<code>Book</code>实体的portlet。</p>
+<h3 id="创建portlet"><a href="#创建portlet" class="headerlink" title="创建portlet"></a>创建portlet</h3><p>按照<a href="http://zhaiyz.com/2014/04/01/liferay-service-builder/">Liferay Service Builder</a>中的步骤创建拥有一个<code>Book</code>实体的portlet。</p>
 <h3 id="自定义字段长度"><a href="#自定义字段长度" class="headerlink" title="自定义字段长度"></a>自定义字段长度</h3><p>在<code>service.xml</code>文件如果有字段的类型为<code>String</code>，如</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">column</span> <span class="attr">name</span>=<span class="string">"title"</span> <span class="attr">type</span>=<span class="string">"String"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
 <p>那么生成数据库表时，<code>title</code>字段的长度默认为<code>75</code>。如果要改变默认长度，需要修改<code>sample/sample-portlet/src/main/resources/META-INF</code>目录下的<code>portlet-model-hints.xml</code>文件内容。现修改为如下内容：</p>

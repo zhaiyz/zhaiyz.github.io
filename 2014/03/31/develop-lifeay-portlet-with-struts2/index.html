@@ -18,7 +18,7 @@
 <script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    hostname: new URL('http://localhost:4000').hostname,
+    hostname: new URL('http://zhaiyz.com').hostname,
     root: '/',
     scheme: 'Pisces',
     version: '7.7.0',
@@ -48,7 +48,7 @@
   <meta name="description" content="Liferay集成Struts2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Liferay集成Struts2">
-<meta property="og:url" content="http://localhost:4000/2014/03/31/develop-lifeay-portlet-with-struts2/index.html">
+<meta property="og:url" content="http://zhaiyz.com/2014/03/31/develop-lifeay-portlet-with-struts2/index.html">
 <meta property="og:site_name" content="一介码工">
 <meta property="og:description" content="Liferay集成Struts2">
 <meta property="og:locale" content="zh_CN">
@@ -60,7 +60,7 @@
 <meta property="article:tag" content=" portlet">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://localhost:4000/2014/03/31/develop-lifeay-portlet-with-struts2/">
+<link rel="canonical" href="http://zhaiyz.com/2014/03/31/develop-lifeay-portlet-with-struts2/">
 
 
 <script id="page-configurations">
@@ -220,7 +220,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2014/03/31/develop-lifeay-portlet-with-struts2/">
+    <link itemprop="mainEntityOfPage" href="http://zhaiyz.com/2014/03/31/develop-lifeay-portlet-with-struts2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="http://img.zhaiyz.tech/avatar.jpeg">
@@ -282,7 +282,7 @@
 <li>Liferay Portal：6.2.0-ce-ga1</li>
 <li>Struts2：2.3.16.1</li>
 </ul>
-<h3 id="创建portlet"><a href="#创建portlet" class="headerlink" title="创建portlet"></a>创建portlet</h3><p>使用<a href="http://zhaiyz.com/2014/03/29/develop-liferay-plugins-with-maven/" target="_blank" rel="noopener">Liferay Portal Maven开发环境搭建</a>文章中的步骤，创建一个<code>sample-portlet</code>项目。</p>
+<h3 id="创建portlet"><a href="#创建portlet" class="headerlink" title="创建portlet"></a>创建portlet</h3><p>使用<a href="http://zhaiyz.com/2014/03/29/develop-liferay-plugins-with-maven/">Liferay Portal Maven开发环境搭建</a>文章中的步骤，创建一个<code>sample-portlet</code>项目。</p>
 <h3 id="集成struts2"><a href="#集成struts2" class="headerlink" title="集成struts2"></a>集成struts2</h3><p>在<code>pom.xml</code>中添加struts2-portlet-plugin依赖</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.struts<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>struts2-portlet-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.3.16.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <a id="more"></a>

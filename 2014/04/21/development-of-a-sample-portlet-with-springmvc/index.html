@@ -18,7 +18,7 @@
 <script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    hostname: new URL('http://localhost:4000').hostname,
+    hostname: new URL('http://zhaiyz.com').hostname,
     root: '/',
     scheme: 'Pisces',
     version: '7.7.0',
@@ -48,7 +48,7 @@
   <meta name="description" content="使用springmvc开发portlet">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用springmvc开发portlet">
-<meta property="og:url" content="http://localhost:4000/2014/04/21/development-of-a-sample-portlet-with-springmvc/index.html">
+<meta property="og:url" content="http://zhaiyz.com/2014/04/21/development-of-a-sample-portlet-with-springmvc/index.html">
 <meta property="og:site_name" content="一介码工">
 <meta property="og:description" content="使用springmvc开发portlet">
 <meta property="og:locale" content="zh_CN">
@@ -62,7 +62,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://zhaiyz.qiniudn.com/images/blog/20140421/springmvc_portlet.png">
 
-<link rel="canonical" href="http://localhost:4000/2014/04/21/development-of-a-sample-portlet-with-springmvc/">
+<link rel="canonical" href="http://zhaiyz.com/2014/04/21/development-of-a-sample-portlet-with-springmvc/">
 
 
 <script id="page-configurations">
@@ -222,7 +222,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2014/04/21/development-of-a-sample-portlet-with-springmvc/">
+    <link itemprop="mainEntityOfPage" href="http://zhaiyz.com/2014/04/21/development-of-a-sample-portlet-with-springmvc/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="http://img.zhaiyz.tech/avatar.jpeg">
@@ -289,7 +289,7 @@
 <li>Eclipse：3.7.2(indigo)</li>
 <li>Spring：3.2.4.RELEASE</li>
 </ul>
-<h3 id="创建一个portlet"><a href="#创建一个portlet" class="headerlink" title="创建一个portlet"></a>创建一个portlet</h3><p>依照<a href="http://zhaiyz.com/2014/04/11/use-eclipse-develop-liferay-with-maven/" target="_blank" rel="noopener">使用eclipse开发liferay maven项目</a>中的方法，创建一个名为<code>springmvc-portlet</code>的portlet。</p>
+<h3 id="创建一个portlet"><a href="#创建一个portlet" class="headerlink" title="创建一个portlet"></a>创建一个portlet</h3><p>依照<a href="http://zhaiyz.com/2014/04/11/use-eclipse-develop-liferay-with-maven/">使用eclipse开发liferay maven项目</a>中的方法，创建一个名为<code>springmvc-portlet</code>的portlet。</p>
 <h3 id="添加springmvc-portlet依赖"><a href="#添加springmvc-portlet依赖" class="headerlink" title="添加springmvc-portlet依赖"></a>添加springmvc-portlet依赖</h3><p>在<code>pom.xml</code>中添加<code>spring-webmvc-portlet</code>依赖，以及<code>jstl</code>依赖。</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">project</span>&gt;</span></span><br><span class="line">    ...</span><br><span class="line">    <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-webmvc-portlet<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">version</span>&gt;</span>3.2.4.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>javax.servlet<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jstl<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">version</span>&gt;</span>1.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    ...</span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <a id="more"></a>

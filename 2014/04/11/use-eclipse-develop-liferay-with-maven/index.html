@@ -52,19 +52,19 @@
 <meta property="og:site_name" content="一介码工">
 <meta property="og:description" content="使用eclipse开发liferay maven项目">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://zhaiyz.qiniudn.com/images/blog/20140411/maven_preferences.png">
-<meta property="og:image" content="http://zhaiyz.qiniudn.com/images/blog/20140411/maven_liferay_archtypes.png">
-<meta property="og:image" content="http://zhaiyz.qiniudn.com/images/blog/20140411/maven_archtypes_liferay_catalog.png">
-<meta property="og:image" content="http://zhaiyz.qiniudn.com/images/blog/20140411/maven_archtypes_liferay_6.2.1.png">
-<meta property="og:image" content="http://zhaiyz.qiniudn.com/images/blog/20140411/maven_liferay_demo.png">
+<meta property="og:image" content="http://img.zhaiyz.tech/images/blog/20140411/maven_preferences.png">
+<meta property="og:image" content="http://img.zhaiyz.tech/images/blog/20140411/maven_liferay_archtypes.png">
+<meta property="og:image" content="http://img.zhaiyz.tech/images/blog/20140411/maven_archtypes_liferay_catalog.png">
+<meta property="og:image" content="http://img.zhaiyz.tech/images/blog/20140411/maven_archtypes_liferay_6.2.1.png">
+<meta property="og:image" content="http://img.zhaiyz.tech/images/blog/20140411/maven_liferay_demo.png">
 <meta property="article:published_time" content="2014-04-11T15:01:46.000Z">
-<meta property="article:modified_time" content="2020-01-02T10:15:40.982Z">
+<meta property="article:modified_time" content="2020-01-02T11:22:55.797Z">
 <meta property="article:author" content="键客">
 <meta property="article:tag" content="liferay">
 <meta property="article:tag" content=" eclipse">
 <meta property="article:tag" content=" maven">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://zhaiyz.qiniudn.com/images/blog/20140411/maven_preferences.png">
+<meta name="twitter:image" content="http://img.zhaiyz.tech/images/blog/20140411/maven_preferences.png">
 
 <link rel="canonical" href="http://zhaiyz.com/2014/04/11/use-eclipse-develop-liferay-with-maven/">
 
@@ -306,14 +306,14 @@
 <p>liferay 6.2.1相关的archetypes已经在4月2号更新到了maven中央库，所以如果平时把maven启动时更新库索引的选项去掉的话，需要选上[如下图]再重启eclipse，这样就可以更新最到新的索引。</p>
 </blockquote>
 <a id="more"></a>
-<p><img src="http://zhaiyz.qiniudn.com/images/blog/20140411/maven_preferences.png" alt="maven_preferences"><br>完成以上操作后在eclipse中新建一个maven project，在<code>Select an Archetype</code>页面的Filter中输入<code>liferay</code>即可检索出liferay相关的archtypes。但是在我本机，虽然更新到了最新的索引，看到的最新的liferay archtypes的版本却是<code>6.2.0-M6</code>。</p>
-<p><img src="http://zhaiyz.qiniudn.com/images/blog/20140411/maven_liferay_archtypes.png" alt="maven_liferay_archtypes"></p>
+<p><img src="http://img.zhaiyz.tech/images/blog/20140411/maven_preferences.png" alt="maven_preferences"><br>完成以上操作后在eclipse中新建一个maven project，在<code>Select an Archetype</code>页面的Filter中输入<code>liferay</code>即可检索出liferay相关的archtypes。但是在我本机，虽然更新到了最新的索引，看到的最新的liferay archtypes的版本却是<code>6.2.0-M6</code>。</p>
+<p><img src="http://img.zhaiyz.tech/images/blog/20140411/maven_liferay_archtypes.png" alt="maven_liferay_archtypes"></p>
 <h4 id="添加liferay私有Catalog"><a href="#添加liferay私有Catalog" class="headerlink" title="添加liferay私有Catalog"></a>添加liferay私有Catalog</h4><p>为了使用最新的archtype，需要添加liferay官网提供的catalog。方法如下，在上图中点击<code>Configure</code>按钮，或选择Window-&gt;Preferences-&gt;Maven-&gt;Archtypes。再点击<code>Add Remote Catalog</code>按钮。在弹出的对话框中。添加<code>https://repository.liferay.com/nexus/content/groups/liferay-ce/archetype-catalog.xml</code>到<code>Catelog File</code>栏中，<code>Description</code>可以自定义，本机使用<code>liferay-ce-archtype-catalog</code>[如下图]。填写完成后，点击OK按钮保存。</p>
-<p><img src="http://zhaiyz.qiniudn.com/images/blog/20140411/maven_archtypes_liferay_catalog.png" alt="maven_archtypes_liferay_catalog"></p>
+<p><img src="http://img.zhaiyz.tech/images/blog/20140411/maven_archtypes_liferay_catalog.png" alt="maven_archtypes_liferay_catalog"></p>
 <h4 id="创建liferay项目"><a href="#创建liferay项目" class="headerlink" title="创建liferay项目"></a>创建liferay项目</h4><p>重新回到创建maven项目界面，Catelog下拉框中选择刚添加的<code>liferay-ce-archtype-catalog</code>，Fileter输入<code>liferay</code>，同时还需要把<code>Show the last version of Archtype only</code>选项去掉，不然的话，只会显示最新的版本。在列出的可先archtype中，选择Artifact Id为<code>liferay-portlet-archtype</code>，Version选择<code>6.2.1</code>[如下图]。</p>
-<p><img src="http://zhaiyz.qiniudn.com/images/blog/20140411/maven_archtypes_liferay_6.2.1.png" alt="maven_archtypes_liferay_6.2.1"></p>
+<p><img src="http://img.zhaiyz.tech/images/blog/20140411/maven_archtypes_liferay_6.2.1.png" alt="maven_archtypes_liferay_6.2.1"></p>
 <p>完成以上操作之后，点击Next按钮进入<code>Specify Archetype parameters</code>界面。根据需求，添加好Group Id，Artifact Id等信息，本文使用配置[如下图]。</p>
-<p><img src="http://zhaiyz.qiniudn.com/images/blog/20140411/maven_liferay_demo.png" alt="maven_liferay_demo"></p>
+<p><img src="http://img.zhaiyz.tech/images/blog/20140411/maven_liferay_demo.png" alt="maven_liferay_demo"></p>
 <p>填写好配置之后，点击Finish，eclipse就会根据选定的archtype和配置创建好一个项目。项目目录结构如下，其中target目录是自动出成的：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── pom.xml</span><br><span class="line">├── src</span><br><span class="line">│   ├── main</span><br><span class="line">│   │   ├── java</span><br><span class="line">│   │   ├── resources</span><br><span class="line">│   │   └── webapp</span><br><span class="line">│   │       ├── css</span><br><span class="line">│   │       │   └── main.css</span><br><span class="line">│   │       ├── icon.png</span><br><span class="line">│   │       ├── js</span><br><span class="line">│   │       │   └── main.js</span><br><span class="line">│   │       ├── view.jsp</span><br><span class="line">│   │       └── WEB-INF</span><br><span class="line">│   │           ├── liferay-display.xml</span><br><span class="line">│   │           ├── liferay-plugin-package.properties</span><br><span class="line">│   │           ├── liferay-portlet.xml</span><br><span class="line">│   │           ├── portlet.xml</span><br><span class="line">│   │           └── web.xml</span><br><span class="line">│   └── <span class="built_in">test</span></span><br><span class="line">│       └── java</span><br><span class="line">└── target</span><br><span class="line">    ├── classes</span><br><span class="line">    ├── m2e-wtp</span><br><span class="line">    │   └── web-resources</span><br><span class="line">    │       └── META-INF</span><br><span class="line">    │           └── maven</span><br><span class="line">    │               └── com.zhaiyz</span><br><span class="line">    │                   └── demo</span><br><span class="line">    │                       ├── pom.properties</span><br><span class="line">    │                       └── pom.xml</span><br><span class="line">    └── <span class="built_in">test</span>-classes</span><br><span class="line"></span><br><span class="line">19 directories, 12 files</span><br></pre></td></tr></table></figure>
 

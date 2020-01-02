@@ -52,15 +52,15 @@
 <meta property="og:site_name" content="一介码工">
 <meta property="og:description" content="使用springmvc开发portlet">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://zhaiyz.qiniudn.com/images/blog/20140421/springmvc_portlet.png">
+<meta property="og:image" content="http://img.zhaiyz.tech/images/blog/20140421/springmvc_portlet.png">
 <meta property="article:published_time" content="2014-04-21T14:47:44.000Z">
-<meta property="article:modified_time" content="2020-01-02T10:15:40.978Z">
+<meta property="article:modified_time" content="2020-01-02T11:22:55.797Z">
 <meta property="article:author" content="键客">
 <meta property="article:tag" content="liferay">
 <meta property="article:tag" content=" portlet">
 <meta property="article:tag" content=" springmvc">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://zhaiyz.qiniudn.com/images/blog/20140421/springmvc_portlet.png">
+<meta name="twitter:image" content="http://img.zhaiyz.tech/images/blog/20140421/springmvc_portlet.png">
 
 <link rel="canonical" href="http://zhaiyz.com/2014/04/21/development-of-a-sample-portlet-with-springmvc/">
 
@@ -314,7 +314,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── pom.xml</span><br><span class="line">└── src</span><br><span class="line">    └── main</span><br><span class="line">        ├── java</span><br><span class="line">        │   └── com</span><br><span class="line">        │       └── zhaiyz</span><br><span class="line">        │           └── SpringMvcPortletController.java</span><br><span class="line">        ├── resources</span><br><span class="line">        │   └── springmvc-portlet.xml</span><br><span class="line">        └── webapp</span><br><span class="line">            ├── css</span><br><span class="line">            │   └── main.css</span><br><span class="line">            ├── icon.png</span><br><span class="line">            ├── js</span><br><span class="line">            │   └── main.js</span><br><span class="line">            └── WEB-INF</span><br><span class="line">                ├── jsp</span><br><span class="line">                │   └── view.jsp</span><br><span class="line">                ├── liferay-display.xml</span><br><span class="line">                ├── liferay-plugin-package.properties</span><br><span class="line">                ├── liferay-portlet.xml</span><br><span class="line">                ├── portlet.xml</span><br><span class="line">                └── web.xml</span><br><span class="line"></span><br><span class="line">11 directories, 12 files</span><br></pre></td></tr></table></figure>
 
 <h3 id="打包发布"><a href="#打包发布" class="headerlink" title="打包发布"></a>打包发布</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn clean pakcage liferay:deploy</span><br></pre></td></tr></table></figure>
-<p>启动tomcat，启动完成后。可应用程序的示例分类中找到新创建的portlet，名为<code>springmvc-portlet</code>。添加此portlet到页面，可以看到如下显示效果。<br><img src="http://zhaiyz.qiniudn.com/images/blog/20140421/springmvc_portlet.png" alt="springmvc_portlet"></p>
+<p>启动tomcat，启动完成后。可应用程序的示例分类中找到新创建的portlet，名为<code>springmvc-portlet</code>。添加此portlet到页面，可以看到如下显示效果。<br><img src="http://img.zhaiyz.tech/images/blog/20140421/springmvc_portlet.png" alt="springmvc_portlet"></p>
 <h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><ol>
 <li><a href="http://blogs.isostech.com/portlet-development/development-simple-portlet-spring-mvc/" target="_blank" rel="noopener">Development of a Simple Portlet with SpringMVC</a></li>
 <li><a href="http://www.huqiwen.com/2013/01/10/liferay-6-1-development-study-17-springmvc-portlet/" target="_blank" rel="noopener">Liferay 6.1开发学习（十七）：基于注解的SpringMVC portlet开发</a></li>

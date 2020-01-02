@@ -52,17 +52,17 @@
 <meta property="og:site_name" content="一介码工">
 <meta property="og:description" content="ubuntu安装fcitx输入法">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://zhaiyz.qiniudn.com/images/blog/20151109/setup01.png">
-<meta property="og:image" content="http://zhaiyz.qiniudn.com/images/blog/20151109/setup02.png">
-<meta property="og:image" content="http://zhaiyz.qiniudn.com/images/blog/20151109/config03.png">
+<meta property="og:image" content="http://img.zhaiyz.tech/images/blog/20151109/setup01.png">
+<meta property="og:image" content="http://img.zhaiyz.tech/images/blog/20151109/setup02.png">
+<meta property="og:image" content="http://img.zhaiyz.tech/images/blog/20151109/config03.png">
 <meta property="article:published_time" content="2015-11-09T14:02:21.000Z">
-<meta property="article:modified_time" content="2020-01-02T10:15:40.982Z">
+<meta property="article:modified_time" content="2020-01-02T11:22:55.797Z">
 <meta property="article:author" content="键客">
 <meta property="article:tag" content="ubuntu">
 <meta property="article:tag" content="输入法">
 <meta property="article:tag" content="fcitx">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://zhaiyz.qiniudn.com/images/blog/20151109/setup01.png">
+<meta name="twitter:image" content="http://img.zhaiyz.tech/images/blog/20151109/setup01.png">
 
 <link rel="canonical" href="http://zhaiyz.com/2015/11/09/ubuntu%E5%AE%89%E8%A3%85fcitx%E8%BE%93%E5%85%A5%E6%B3%95/">
 
@@ -293,12 +293,12 @@
 <h2 id="安装fcitx拼音"><a href="#安装fcitx拼音" class="headerlink" title="安装fcitx拼音"></a>安装fcitx拼音</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install fcitx-pinyin -y</span><br></pre></td></tr></table></figure>
 <p>以上命令运行完成之后，就已经安装好了，现在进行配置。执行</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">im-config</span><br></pre></td></tr></table></figure>
-<p>在弹出的提示窗口中选择<code>确定</code>和<code>是</code>，然后就能进入如下界面，选中<code>fcitx</code>。<br><img src="http://zhaiyz.qiniudn.com/images/blog/20151109/setup01.png" alt="install fcitx"></p>
+<p>在弹出的提示窗口中选择<code>确定</code>和<code>是</code>，然后就能进入如下界面，选中<code>fcitx</code>。<br><img src="http://img.zhaiyz.tech/images/blog/20151109/setup01.png" alt="install fcitx"></p>
 <h2 id="注销或重启"><a href="#注销或重启" class="headerlink" title="注销或重启"></a>注销或重启</h2><p>注销或重启，以使前面的配置生效。</p>
 <h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>使用<code>Ctrl</code>+<code>Space</code>就可以激活输入法，使用<code>Shift</code>就可以快速切换中英文输入。</p>
 <a id="more"></a>
 
-<h2 id="隐藏托盘中自带的输入法图标"><a href="#隐藏托盘中自带的输入法图标" class="headerlink" title="隐藏托盘中自带的输入法图标"></a>隐藏托盘中自带的输入法图标</h2><p>安装完<code>fcitx</code>后，托盘中还会显示出系统自带的输入法图标，如下图中红框部分：<br><img src="http://zhaiyz.qiniudn.com/images/blog/20151109/setup02.png" alt="install fcitx"><br>单击红框内容，在弹出的菜单中选择<code>文本输入设置</code>，在弹出的窗口中把<code>在菜单栏显示当前输入源</code>的复选框<strong>不选中</strong>，就可以了。如下图：<br><img src="http://zhaiyz.qiniudn.com/images/blog/20151109/config03.png" alt="install fcitx"></p>
+<h2 id="隐藏托盘中自带的输入法图标"><a href="#隐藏托盘中自带的输入法图标" class="headerlink" title="隐藏托盘中自带的输入法图标"></a>隐藏托盘中自带的输入法图标</h2><p>安装完<code>fcitx</code>后，托盘中还会显示出系统自带的输入法图标，如下图中红框部分：<br><img src="http://img.zhaiyz.tech/images/blog/20151109/setup02.png" alt="install fcitx"><br>单击红框内容，在弹出的菜单中选择<code>文本输入设置</code>，在弹出的窗口中把<code>在菜单栏显示当前输入源</code>的复选框<strong>不选中</strong>，就可以了。如下图：<br><img src="http://img.zhaiyz.tech/images/blog/20151109/config03.png" alt="install fcitx"></p>
 <h2 id="安装五笔或五笔拼音"><a href="#安装五笔或五笔拼音" class="headerlink" title="安装五笔或五笔拼音"></a>安装五笔或五笔拼音</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install fcitx-table-wubi -y</span><br><span class="line">sudo apt-get install fcitx-table-wbpy -y</span><br></pre></td></tr></table></figure>
 <p>使用五笔的话，建议使用<code>fcitx-table-wbpy</code>，打字过程中遇到个不知道怎么折的，可以直接用拼音，很方便。</p>
 

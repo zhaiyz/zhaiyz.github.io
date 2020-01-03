@@ -41,7 +41,7 @@
     },
     localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
     path: 'search.xml',
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
   };
 </script>
 
@@ -116,7 +116,7 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
+  <div class="container">
     <div class="headband"></div>
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -130,7 +130,8 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <p class="site-subtitle">码工，打码为生</p>
+        <h1 class="site-subtitle" itemprop="description">码工，打码为生</h1>
+      
   </div>
 
   <div class="site-nav-toggle">
@@ -237,7 +238,7 @@
 
       
     <div class="collection-year">
-      <h1 class="collection-header">2012</h1>
+      <h2 class="collection-header">2012</h2>
     </div>
 
   <article itemscope itemtype="http://schema.org/Article">
@@ -251,11 +252,11 @@
         </time>
       </div>
 
-      <h2 class="post-title">
+      <h3 class="post-title">
           <a class="post-title-link" href="/2012/06/27/liferay%E8%A7%A3%E5%86%B3%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%88%B0%E6%96%87%E6%A1%A3%E5%BA%93%E6%A0%BC%E5%BC%8F%E9%99%90%E5%88%B6/" itemprop="url">
             <span itemprop="name">liferay解决上传文件到文档库格式限制</span>
           </a>
-      </h2>
+      </h3>
 
     </header>
   </article>
@@ -271,11 +272,11 @@
         </time>
       </div>
 
-      <h2 class="post-title">
+      <h3 class="post-title">
           <a class="post-title-link" href="/2012/06/26/sproperty%E6%A0%87%E7%AD%BE%E6%98%BE%E7%A4%BAhtml%E4%BB%A3%E7%A0%81/" itemprop="url">
             <span itemprop="name">s:property标签显示html代码</span>
           </a>
-      </h2>
+      </h3>
 
     </header>
   </article>
@@ -516,12 +517,8 @@
 
   
   <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
 
 <script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
 
 
 <script src="/js/schemes/pisces.js"></script>
@@ -533,6 +530,15 @@
 
 
   
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
 
 
 

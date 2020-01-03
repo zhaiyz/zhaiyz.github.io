@@ -41,7 +41,7 @@
     },
     localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
     path: 'search.xml',
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
   };
 </script>
 
@@ -116,7 +116,7 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
+  <div class="container">
     <div class="headband"></div>
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -130,7 +130,8 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <p class="site-subtitle">码工，打码为生</p>
+        <h1 class="site-subtitle" itemprop="description">码工，打码为生</h1>
+      
   </div>
 
   <div class="site-nav-toggle">
@@ -231,14 +232,14 @@
   <div class="post-block">
     <div class="posts-collapse">
       <div class="collection-title">
-        <h1 class="collection-header">liferay
+        <h2 class="collection-header">liferay
           <small>标签</small>
-        </h1>
+        </h2>
       </div>
 
       
     <div class="collection-year">
-      <h1 class="collection-header">2014</h1>
+      <h2 class="collection-header">2014</h2>
     </div>
 
   <article itemscope itemtype="http://schema.org/Article">
@@ -252,11 +253,11 @@
         </time>
       </div>
 
-      <h2 class="post-title">
+      <h3 class="post-title">
           <a class="post-title-link" href="/2014/09/19/collection-of-articles-01/" itemprop="url">
             <span itemprop="name">收藏的文章列表</span>
           </a>
-      </h2>
+      </h3>
 
     </header>
   </article>
@@ -272,11 +273,11 @@
         </time>
       </div>
 
-      <h2 class="post-title">
+      <h3 class="post-title">
           <a class="post-title-link" href="/2014/05/04/liferay-theme-define-objects/" itemprop="url">
             <span itemprop="name">liferay-theme defineObjects</span>
           </a>
-      </h2>
+      </h3>
 
     </header>
   </article>
@@ -292,11 +293,11 @@
         </time>
       </div>
 
-      <h2 class="post-title">
+      <h3 class="post-title">
           <a class="post-title-link" href="/2014/04/21/development-of-a-sample-portlet-with-springmvc/" itemprop="url">
             <span itemprop="name">使用springmvc开发portlet</span>
           </a>
-      </h2>
+      </h3>
 
     </header>
   </article>
@@ -312,11 +313,11 @@
         </time>
       </div>
 
-      <h2 class="post-title">
+      <h3 class="post-title">
           <a class="post-title-link" href="/2014/04/11/use-eclipse-develop-liferay-with-maven/" itemprop="url">
             <span itemprop="name">使用eclipse开发liferay maven项目</span>
           </a>
-      </h2>
+      </h3>
 
     </header>
   </article>
@@ -332,11 +333,11 @@
         </time>
       </div>
 
-      <h2 class="post-title">
+      <h3 class="post-title">
           <a class="post-title-link" href="/2014/04/10/some-links-about-liferay/" itemprop="url">
             <span itemprop="name">关于Liferay的一些文章链接</span>
           </a>
-      </h2>
+      </h3>
 
     </header>
   </article>
@@ -352,11 +353,11 @@
         </time>
       </div>
 
-      <h2 class="post-title">
+      <h3 class="post-title">
           <a class="post-title-link" href="/2014/04/09/the-meaning-of-classnameid-and-classpk/" itemprop="url">
             <span itemprop="name">ClassNameId和ClassPK的意义</span>
           </a>
-      </h2>
+      </h3>
 
     </header>
   </article>
@@ -372,11 +373,11 @@
         </time>
       </div>
 
-      <h2 class="post-title">
+      <h3 class="post-title">
           <a class="post-title-link" href="/2014/04/08/liferay-url-parameters-details/" itemprop="url">
             <span itemprop="name">Liferay URL parameters details</span>
           </a>
-      </h2>
+      </h3>
 
     </header>
   </article>
@@ -392,11 +393,11 @@
         </time>
       </div>
 
-      <h2 class="post-title">
+      <h3 class="post-title">
           <a class="post-title-link" href="/2014/04/05/liferay-crud-portlet-demo/" itemprop="url">
             <span itemprop="name">Liferay crud portlet demo</span>
           </a>
-      </h2>
+      </h3>
 
     </header>
   </article>
@@ -412,11 +413,11 @@
         </time>
       </div>
 
-      <h2 class="post-title">
+      <h3 class="post-title">
           <a class="post-title-link" href="/2014/04/03/liferay-customize-db-column-sizes/" itemprop="url">
             <span itemprop="name">Liferay定制数据库字段长度</span>
           </a>
-      </h2>
+      </h3>
 
     </header>
   </article>
@@ -432,11 +433,11 @@
         </time>
       </div>
 
-      <h2 class="post-title">
+      <h3 class="post-title">
           <a class="post-title-link" href="/2014/04/02/add-methods-to-service-impl/" itemprop="url">
             <span itemprop="name">Liferay添加自定义服务层方法</span>
           </a>
-      </h2>
+      </h3>
 
     </header>
   </article>
@@ -679,12 +680,8 @@
 
   
   <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
 
 <script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
 
 
 <script src="/js/schemes/pisces.js"></script>
@@ -696,6 +693,15 @@
 
 
   
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
 
 
 

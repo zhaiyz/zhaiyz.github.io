@@ -41,7 +41,7 @@
     },
     localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
     path: 'search.xml',
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
   };
 </script>
 
@@ -116,7 +116,7 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
+  <div class="container">
     <div class="headband"></div>
 
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -130,7 +130,8 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <p class="site-subtitle">码工，打码为生</p>
+        <h1 class="site-subtitle" itemprop="description">码工，打码为生</h1>
+      
   </div>
 
   <div class="site-nav-toggle">
@@ -231,14 +232,14 @@
   <div class="post-block">
     <div class="posts-collapse">
       <div class="collection-title">
-        <h1 class="collection-header">mysql
+        <h2 class="collection-header">mysql
           <small>标签</small>
-        </h1>
+        </h2>
       </div>
 
       
     <div class="collection-year">
-      <h1 class="collection-header">2015</h1>
+      <h2 class="collection-header">2015</h2>
     </div>
 
   <article itemscope itemtype="http://schema.org/Article">
@@ -252,16 +253,16 @@
         </time>
       </div>
 
-      <h2 class="post-title">
+      <h3 class="post-title">
           <a class="post-title-link" href="/2015/10/28/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E4%BF%9D%E5%AD%98%E5%A4%9A%E7%A7%8D%E7%8A%B6%E6%80%81%E6%88%96%E7%B1%BB%E5%9E%8B%E6%97%B6%E4%BD%BF%E7%94%A8int%E8%BF%98%E6%98%AFvarchar/" itemprop="url">
             <span itemprop="name">数据库中保存多种状态或类型时使用int还是varchar</span>
           </a>
-      </h2>
+      </h3>
 
     </header>
   </article>
     <div class="collection-year">
-      <h1 class="collection-header">2014</h1>
+      <h2 class="collection-header">2014</h2>
     </div>
 
   <article itemscope itemtype="http://schema.org/Article">
@@ -275,16 +276,16 @@
         </time>
       </div>
 
-      <h2 class="post-title">
+      <h3 class="post-title">
           <a class="post-title-link" href="/2014/03/30/liferay-portal-connect-mysql-database-confiuration/" itemprop="url">
             <span itemprop="name">Liferay Portal连接mysql数据库配置</span>
           </a>
-      </h2>
+      </h3>
 
     </header>
   </article>
     <div class="collection-year">
-      <h1 class="collection-header">2013</h1>
+      <h2 class="collection-header">2013</h2>
     </div>
 
   <article itemscope itemtype="http://schema.org/Article">
@@ -298,11 +299,11 @@
         </time>
       </div>
 
-      <h2 class="post-title">
+      <h3 class="post-title">
           <a class="post-title-link" href="/2013/03/07/mysql%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E7%94%A8%E6%88%B7/" itemprop="url">
             <span itemprop="name">mysql创建数据库及用户</span>
           </a>
-      </h2>
+      </h3>
 
     </header>
   </article>
@@ -542,12 +543,8 @@
 
   
   <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
 
 <script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
 
 
 <script src="/js/schemes/pisces.js"></script>
@@ -559,6 +556,15 @@
 
 
   
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
 
 
 
